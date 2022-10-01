@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nishit Meswania | Web Developer | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -58,7 +60,8 @@
                 <div class="column right">
                     <div class="text">I'm Nishit and I'm a <span class="typing-2"></span></div>
                     <p>I am a Web Developer which make sites as per requirements of clients and had a good experience in UI/UX Designs.</p>
-                    <a href="Resume.pdf" download>Download CV</a>
+                    <a href="Resume.pdf" download>Web CV</a>
+                    <a style="margin-left: 10px;" href="resume gd.pdf" download>Graphic CV</a>
                 </div>
             </div>
         </div>
@@ -68,11 +71,17 @@
     <section class="services" id="services">
         <div class="max-width">
             <h2 class="title">My services</h2>
-            <div class="serv-content">
+            <div class="serv-content owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <i class="fa-solid fa-file-code"></i>
+                        <div class="text">Web Design</div>
+                    </div>
+                </div>
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-paint-brush"></i>
-                        <div class="text">Web Design</div>
+                        <div class="text">Graphic Designer</div>
                     </div>
                 </div>
                 <div class="card">
@@ -121,7 +130,7 @@
                     <div class="bars">
                         <div class="info">
                             <span>JavaScript</span>
-                            <span>80%</span>
+                            <span>60%</span>
                         </div>
                         <div class="line js"></div>
                     </div>
@@ -135,7 +144,7 @@
                     <div class="bars">
                         <div class="info">
                             <span>MySQL</span>
-                            <span>70%</span>
+                            <span>30%</span>
                         </div>
                         <div class="line mysql"></div>
                     </div>
@@ -151,6 +160,7 @@
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
+                    <!-- <p>Using this details....</p> -->
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -203,9 +213,31 @@
 
     <!-- footer section start -->
     <footer>
-        <span>Created By <a href="/">Nishit with ❤</a> | <a href="https://www.instagram.com/nisshittt/"><span class="fab fa-instagram follow"></span></a> <a href="https://github.com/baburao-2708"><span class="fab fa-github follow"></span></a> <a href="https://www.linkedin.com/in/nishit-meswania/"><span class="fab fa-linkedin follow"></span></a></span>
+        <span>Created By <a href="/">Nishit with ❤</a> | <a href="https://github.com/baburao-2708"><span class="fab fa-github follow"></span></a> <a href="https://www.linkedin.com/in/nishit-meswania/"><span class="fab fa-linkedin follow"></span></a></span>
     </footer>
-
+    <script>
+        $(".serv-content").owlCarousel({
+            margin: 30,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0:{
+                    items: 1,
+                    nav: false
+                },
+                600:{
+                    items: 2,
+                    nav: false
+                },
+                1000:{
+                    items: 3,
+                    nav: false
+                }
+            }
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
