@@ -1,3 +1,15 @@
+(function () {
+  //===== Prealoder
+
+  window.onload = function () {
+      window.setTimeout(fadeout, 2000);
+  }
+
+  function fadeout() {
+      document.querySelector('.preloader').style.opacity = '0';
+      document.querySelector('.preloader').style.display = 'none';
+  }
+})();
 /* ----- NAVIGATION BAR FUNCTION ----- */
 function myMenuFunction(){
   var menuBtn = document.getElementById("myNavMenu");
@@ -115,3 +127,4 @@ sections.forEach(current =>{
 }
 
 window.addEventListener('scroll', scrollActive)
+
