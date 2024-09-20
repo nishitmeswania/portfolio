@@ -15,7 +15,6 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
 
-
 // testimonials variables
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
@@ -164,7 +163,7 @@ document.querySelectorAll(".copy").forEach(copyButton => {
     const textToCopy = targetElement.textContent.replace(/\s+/g, " ").trim();
 
     navigator.clipboard.writeText(textToCopy).then(() => {
-      alert("Copied!");
+      alert("Thanks for copying my email! \nLooking forward to have a word with you! 😊");
     })
   })
 });
