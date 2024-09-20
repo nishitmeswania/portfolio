@@ -697,8 +697,11 @@
               </li>
             </ul>
           </section>
-          <a href="./assets/docs/Nishit's Meswania Resume.pdf" class="download" download
-            ><button class="form-btn resume-download" type="submit" >
+          <a
+            href="./assets/docs/Nishit's Meswania Resume.pdf"
+            class="download"
+            download
+            ><button class="form-btn resume-download" type="submit">
               <i class="fa-solid fa-file-arrow-down"></i>
               <span>Download Resume</span>
             </button></a
@@ -1230,8 +1233,38 @@
               ></iframe>
             </figure>
           </section>
-
-          <section class="contact-form">
+          <iframe
+            data-tally-src="https://tally.so/embed/nGD4ZL?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            loading="lazy"
+            width="100%"
+            height="276"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="Contact Me"
+          ></iframe>
+          <script>
+            var d = document,
+              w = "https://tally.so/widgets/embed.js",
+              v = function () {
+                "undefined" != typeof Tally
+                  ? Tally.loadEmbeds()
+                  : d
+                      .querySelectorAll("iframe[data-tally-src]:not([src])")
+                      .forEach(function (e) {
+                        e.src = e.dataset.tallySrc;
+                      });
+              };
+            if ("undefined" != typeof Tally) v();
+            else if (d.querySelector('script[src="' + w + '"]') == null) {
+              var s = d.createElement("script");
+              (s.src = w),
+                (s.onload = v),
+                (s.onerror = v),
+                d.body.appendChild(s);
+            }
+          </script>
+          <!-- <section class="contact-form">
             <h3 class="h3 form-title">Contact Form</h3>
 
             <form action="#" class="form" data-form>
@@ -1268,7 +1301,7 @@
                 <span>Send Message</span>
               </button>
             </form>
-          </section>
+          </section> -->
         </article>
       </div>
     </main>
